@@ -3,6 +3,7 @@
 include 'config.php';
 
 $texto_buscado = "";
+$resultados_count="";
 $lista_resultados = array();
 
 if (isset($_GET['busqueda'])) {
@@ -33,7 +34,10 @@ if (isset($_GET['busqueda'])) {
             
             $lista_resultados[] = $fila;
         }
-        //var_dump($lista_resultados);
+        
+        
+        var_dump($lista_resultados);
+        $resultados_count= $lista_resultados[""];
     }
 }
 ?>
@@ -53,7 +57,7 @@ if (isset($_GET['busqueda'])) {
     </div>
 
     <div class="contenedor-resultados">
-        <h3>Resultados para la palabra: <?php echo $texto_buscado; ?></h3>
+        <h3>Resultados para la palabra: <?php echo $texto_buscado; ?> <?php echo $resultados_count  ?></h3>
 
         <?php
         if (count($lista_resultados) > 0) {
