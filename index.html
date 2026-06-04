@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>LEGOD - Buscador</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+
+    <div class="encabezado">
+        <h1>LEG<span>O</span>D</h1>
+    </div>
+
+    <div class="menu-navegacion">
+        <a href="index.html" class="btn-menu">Buscar</a>
+        <a href="crear.php" class="btn-menu">Crear</a>
+    </div>
+
+    <div class="contenedor-busqueda">
+        <div class="formulario">
+            <h2>Busca un set</h2>
+            <form action="buscar.php" method="GET">
+                <input type="text" name="busqueda" placeholder="Ejemplo: Star Wars, Castle..." required>
+                <input type="submit" value="Buscar">
+            </form>
+        </div>
+    </div>
+
+</body>
+</html>

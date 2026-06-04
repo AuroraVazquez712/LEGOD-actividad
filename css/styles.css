@@ -1,0 +1,224 @@
+/* --- Estilos Generales para ambos archivos --- */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #000000;
+    margin: 0;
+    padding: 0;
+}
+
+.encabezado {
+    background-color: #E3000B;
+    padding: 25px 20px;
+    border-bottom: 5px solid #000000;
+    text-align: center;
+}
+
+.encabezado h1 {
+    color: #FFFFFF;
+    margin: 0;
+    font-size: 3.5em;
+    letter-spacing: 3px;
+}
+
+.encabezado h1 span {
+    color: #FFD500;
+}
+
+.encabezado h2 {
+    color: #FFFFFF;
+    margin: 0;
+}
+
+.encabezado a {
+    color: #FFD500;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+/* BUscador */ 
+.centrar-contenido {
+    text-align: center;
+}
+
+.contenedor-busqueda {
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.formulario {
+    background-color: #FFFFFF;
+    display: inline-block;
+    padding: 30px;
+    border: 3px solid #000000;
+    border-radius: 10px;
+    box-shadow: 4px 4px 0px #000000;
+}
+
+input[type="text"] {
+    padding: 12px;
+    width: 300px;
+    border: 2px solid #000000;
+    font-size: 16px;
+}
+
+input[type="submit"] {
+    padding: 12px 25px;
+    background-color: #FFD500;
+    color: #000000;
+    border: 2px solid #000000;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #E6C200;
+}
+
+/* RESULTADOS */
+.contenedor-resultados {
+    width: 80%;
+    max-width: 800px;
+    margin: 30px auto;
+}
+
+.tarjeta {
+    background-color: #FFFFFF;
+    border: 3px solid #000000;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 15px;
+    box-shadow: 3px 3px 0px #000000;
+}
+
+.tarjeta h3 {
+    color: #E3000B;
+    margin-top: 0;
+}
+
+.etiqueta-tema {
+    background-color: #FFD500;
+    color: #000000;
+    padding: 4px 10px;
+    border-radius: 5px;
+    border: 1px solid #000000;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+
+.btn-eliminar {
+    background-color: #E3000B;
+    color: #FFFFFF;
+    border: 2px solid #000000;
+    padding: 8px 15px;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.btn-eliminar:hover {
+    background-color: #B30009;
+}
+
+/* --- Mensajes de la BD --- */
+.mensaje {
+    text-align: center;
+    padding: 20px;
+    margin: 20px auto;
+    width: 80%;
+    max-width: 600px;
+    border: 3px solid #000000;
+    border-radius: 8px;
+    background-color: #FFFFFF;
+}
+
+.mensaje-exito {
+    border-color: #4CAF50;
+    color: #4CAF50;
+}
+
+.mensaje-error {
+    border-color: #E3000B;
+    color: #E3000B;
+}
+/**/
+.menu-navegacion {
+    text-align: center;
+    background-color: #000000;
+    padding: 15px;
+}
+
+.btn-menu {
+    display: inline-block;
+    background-color: #FFD500;
+    color: #000000;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border: 2px solid #FFFFFF;
+    border-radius: 5px;
+    margin: 0 10px;
+}
+
+.btn-menu:hover {
+    background-color: #E6C200;
+}
+
+/* --- CREAR */
+label {
+    font-weight: bold;
+    font-size: 16px;
+    display: block;
+    margin-bottom: 5px;
+    margin-top: 15px;
+    text-align: left;
+}
+
+select {
+    padding: 12px;
+    width: 328px; 
+    border: 2px solid #000000;
+    font-size: 16px;
+    background-color: #FFFFFF;
+    cursor: pointer;
+}
+
+input[type="number"] {
+    padding: 12px;
+    width: 300px;
+    border: 2px solid #000000;
+    font-size: 16px;
+}
+
+/* --- Botón para Editar --- */
+.btn-editar {
+    background-color: #0055BF;
+    color: #FFFFFF;
+    border: 2px solid #000000;
+    padding: 8px 15px;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    display: inline-block;
+    text-decoration: none; /* Para que el enlace parezca botón */
+}
+
+.btn-editar:hover {
+    background-color: #003B87;
+}
+
+.acciones-tarjeta {
+    margin-top: 15px;
+    display: flex;
+    gap: 10px;
+}
