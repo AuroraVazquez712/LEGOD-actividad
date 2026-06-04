@@ -21,12 +21,18 @@ if (isset($_GET['busqueda'])) {
             
             $sql2 = "SELECT name FROM themes WHERE theme_id = $theme_id";
             $query2 = mysqli_query($conexion, $sql2);
+
+            $sql3= "SELECT count(*) as cantidad FROM themes WHERE theme_id=$theme_id";
+            $query3= mysqli_query($conexion, $sql3);
+            
             
             if ($query2) {
                 $res = mysqli_fetch_assoc($query2);
+                $res2=mysqli_fetch_assoc($query3);
                 
                 if ($res) {
                     $fila["theme_name"] = $res["name"];
+                    $fila["theme_name"]= $res2["cantidad"];
                 } else {
                     $fila["theme_name"] = "Sin tema";
                 }
@@ -35,9 +41,9 @@ if (isset($_GET['busqueda'])) {
             $lista_resultados[] = $fila;
         }
         
-        
-        var_dump($lista_resultados);
-        $resultados_count= $lista_resultados[""];
+
+        var_dump($res2);
+        //$resultados_count= $lista_resultados[""];
     }
 }
 ?>
